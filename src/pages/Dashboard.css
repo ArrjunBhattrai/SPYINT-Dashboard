@@ -1,0 +1,109 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  body {
+    background-color: #0A0A0A;
+    color: #ffffff;
+  }
+  
+  /* --- Dashboard Container --- */
+  .dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* --- Title --- */
+  .dashboard-title {
+    margin-top: 7rem;
+    font-size: 4rem;
+    text-align: center;
+    color: #EE00FF;
+    /* text-shadow: 0 0 5px #EE00FF, 0 0 10px #EE00FF; */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  /* --- Summary Cards --- */
+  .summary-cards {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 30px;
+    margin-top: 2rem;
+  }
+  
+  .card {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px #EE00FF;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ffffff;
+    transition: 0.3s;
+  }
+  
+  .card:hover {
+    box-shadow: 0 0 15px #EE00FF, 0 0 30px #EE00FF;
+    transform: scale(1.05);
+  }
+  
+  /* --- Recent Activities --- */
+  .recent-activities {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    background: #111;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #EE00FF;
+    gap: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  
+  .recent-activities h2 {
+    color: #EE00FF;
+    margin-bottom: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
+  
+  .recent-activities ul {
+    list-style: none;
+  }
+  
+  .recent-activities li {
+    padding: 8px 0;
+    border-bottom: 1px solid #EE00FF;
+    text-align: right;
+    font-size: 1,2rem;
+  }
+  
+  /* --- Chart Section --- */
+  .chart-container {
+    width: 100%;
+    max-width: 800px;
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #EE00FF;
+    margin-top: 40px;
+  }
+  
+  .chart-container h2 {
+    text-align: center;
+    color: #EE00FF;
+    /* text-shadow: 0 0 5px #EE00FF; */
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 2rem;
+  }

@@ -1,0 +1,145 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.home-container {
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  background-image: url("parabolic-rectagle.svg"); /* Keep your SVG */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.greeting {
+  color: WHITE;
+font-size: 4.5rem; /* Larger text */
+font-weight: bold;
+margin-bottom: 3REM;
+margin-top: 6rem;
+}
+
+.username {
+color: #ee00ff; /* Keep it consistent */
+}
+
+
+.insights-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 900px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.insight-card {
+  position: relative;
+  border: 2px solid #ee00ff;
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+  background: #111;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.insight-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 15px #ee00ff;
+}
+
+.insight-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.insight-content {
+  padding: 15px;
+  color: #ee00ff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.insight-hover {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.insight-card:hover .insight-hover {
+  opacity: 1;
+}
+
+.insight-description {
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.view-more-btn {
+  background: #ee00ff;
+  color: black;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  text-transform: uppercase;
+}
+
+.view-more-btn:hover {
+  background: #820082;
+  color: white;
+}
+
+.dashboard-btn {
+  background-color: #EE00FF;
+  color: #0A0A0A;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #EE00FF;
+  transition: 0.3s;
+  margin-top: 10px;
+  margin-bottom: 3rem;
+}
+
+.dashboard-btn:hover {
+  box-shadow: 0 0 15px #95019f, 0 0 30px #EE00FF;
+  transform: scale(1.05);
+  color: white;
+  
+}
+
+a{
+  text-decoration: none;
+}

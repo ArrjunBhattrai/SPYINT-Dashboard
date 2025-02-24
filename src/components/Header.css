@@ -1,0 +1,84 @@
+/* Header container - Fixed to the top */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Logo container - Centered */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+/* Smaller logo */
+.logo {
+    height: 3em; /* Reduced height */
+    width: auto;
+}
+
+/* Menu container */
+.menu-container {
+    position: relative;
+}
+
+/* Menu icon */
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Dropdown */
+.dropdown {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: #000;
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(208, 0, 255, 0.5);
+    z-index: 100;
+}
+
+/* Dropdown items */
+.dropdown li {
+    padding: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+.dropdown li:hover {
+    background: #ee00ff;
+}
+
+.dropdown li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    display: block;
+}
+
+.dropdown li:hover a {
+    color: #0a0a0a;
+}
+
+/* Right icons */
+.right-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    font-size: 20px;
+    cursor: pointer;
+}
