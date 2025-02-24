@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
 import "./Home.css"; // Import the CSS file
 
@@ -11,7 +10,6 @@ const insights = [
 ];
 
 const Home = ({ userName }) => {
-  const navigate = useNavigate();
   return (
     <div className="home-container">
       <h1 className="greeting">
